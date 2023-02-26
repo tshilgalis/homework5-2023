@@ -1,7 +1,7 @@
-
 /* DEFAULT VIEW */
 
 /* 1 */
+/* Creates animation for header logo */
 @keyframes animate1
 {
     from
@@ -19,7 +19,6 @@
 #logo 
 {
     animation-name: animate1;
-    /* animation-delay: 0s; */
     animation-duration: 5s;
 }
 
@@ -32,15 +31,16 @@ body
 }
 
 /* 3 */
+/* Properly formats heading */
 header 
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 /* 4 */
+/* Distributes header links properly */
 .nav_links 
 {
     display: flex;
@@ -49,12 +49,14 @@ header
 }
 
 /* 5 */
+/* Keeps link the same color at all times */
 a:visited 
 {
     color: blue;
 }
 
 /* 6 & 7 */
+/* Card customization/style */
 .card > header 
 {
     /* a */
@@ -74,8 +76,6 @@ a:visited
 .card 
 {
     flex-basis: 450px;
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -89,6 +89,7 @@ a:visited
 }
 
 /* 9 */
+/* Gives style to gallery images */
 .gallery > img 
 {
     border-style: solid;
@@ -100,6 +101,7 @@ a:visited
 } 
 
 /* 10 */
+/* Properly formats gallery images */
 .gallery 
 {
     display: flex;
@@ -109,12 +111,12 @@ a:visited
 }
 
 /* LARGE SCREEN */
+/* Changes made for screens larger than 900px */
 @media screen and (min-width: 900px)
 {
     /* 11 */
     header
     {
-        /* display: flex; */
         flex-direction: row;
         justify-content: space-between;
     }
@@ -146,6 +148,7 @@ a:visited
 }
 
 /* REDUCED MOTION */
+/* Takes away logo animation */
 /* 14 */
 @media screen and (prefers-reduced-motion: reduce) 
 {
@@ -156,6 +159,7 @@ a:visited
 }
 
 /* PORTRAIT MODE PRINT */
+/* Changes for print layout */
 @media print
 {
     body 
@@ -199,11 +203,13 @@ a:visited
     }
 
     /* 20 */
+    /* Does not display gallery */
     .gallery, #gallery {
         display: none;
     }
     
     /* 21 */
+    /* thumbs up */
     .card li:nth-child(2)::after 
     {
         content:"\1F44D";
